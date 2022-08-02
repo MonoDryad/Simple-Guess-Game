@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+    <title>Adion Game</title>
+</head>
+<body>
+    <h1 class="game-title">Adion Game</h1>
+    <div class="body-menu">
+        <button class="menu-button play" onclick="selecionarMenu(0)">Começar</button>
+        <button class="menu-button config" onclick="selecionarMenu(1)">Configurar</button>
+    </div>
+    <div class="body-config">
+        <label>Volume</label>
+        <input type="range" id="">
+        <label><input type="checkbox" name="" id="extremaDificuldade">Dificuldade Extrema</label>
+        <button class="menu-button config" onclick="selecionarMenu(null)">Voltar</button>
+    </div>
+    <div class="body-difficulty">
+        <h3 class="subtitle">Escolher dificuldade</h3>
+        <button class="menu-button easy" onclick="pegarDificuldade(0)">Divertido</button>
+        <button class="menu-button normal" onclick="pegarDificuldade(1)">Empolgante</button>
+        <button class="menu-button hard" onclick="pegarDificuldade(2)">Extraordinário</button>
+        <button class="menu-button config" onclick="selecionarMenu(null)">Voltar</button>
+    </div>
+    <div class="body-finishDetails">
+        <h3 class="subtitle">Seu nome</h3>
+        <input id="nome-usuario" class="user-response" placeholder="Insíra o seu nome!">
+        <button class="menu-button" onclick="jogar()">Jogar!</button>
+    </div>
+    <div class="body-game">
+        <p id="player-name" class="player-name"></p>
+        <h3 id="jogo-numeros" class="game-numbers"></h3>
+        <h3 class="subtitle-results">O resultado é?</h3>
+        <input type="number" id="jogo-resposta" class="user-response" placeholder="resultado">
+        <button class="menu-button" onclick="guess()">Estou certo(a)?</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+}
+
+*{
+    color: rgb(233, 233, 233);
+}
+
+button{
+    padding: 50;
+    font: 1.3em sans-serif;
+    border: 2px solid rgb(239, 151, 247);
+    border-radius: 5px;
+    background-color: blueviolet;
+    margin: 20px;
+    width: 275px;
+    height: 40px;
+}
+
+button:hover{
+    background-color: rgb(170, 79, 255);
+    cursor: pointer;
+}
+
+input{
+    font: 1.2em sans-serif;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid blueviolet;
+    border-left: 1px solid blueviolet;
+    outline: none;
+}
+
+.body-menu, .body-difficulty, .body-finishDetails, .body-game, .body-config{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
